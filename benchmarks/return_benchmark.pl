@@ -9,6 +9,19 @@ return_scalar();
 return_array();
 return_list();
 
+=pod
+
+=head1 Benchmark for returning from functions
+
+You should not care about the result. It's just an interesting fact.
+
+Inspired by https://gist.github.com/1035329 and https://gist.github.com/1037210.
+
+These benchmarks comparing the same functions. The difference between the functions of each benchmark is, that one uses
+explicit return. The other one does not.
+
+=cut
+
 sub return_scalar {
     print "Return a scalar\n\n";
 
